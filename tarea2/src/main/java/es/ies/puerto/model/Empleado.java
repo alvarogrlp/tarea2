@@ -143,23 +143,6 @@ public class Empleado {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (o == this) {
-            return true;
-        }
-        if (!(o instanceof Empleado)) {
-            return false;
-        }
-        Empleado empleadoController = (Empleado) o;
-        return Objects.equals(identificador, empleadoController.identificador);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(identificador);
-    }
-
-    @Override
     public String toString() {
         return getIdentificador() + "," + getNombre() + "," + getPuesto()
                 + "," + getSalario() + "," + getFechaNacimiento();
