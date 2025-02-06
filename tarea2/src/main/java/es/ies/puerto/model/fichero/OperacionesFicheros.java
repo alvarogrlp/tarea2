@@ -73,7 +73,7 @@ public class OperacionesFicheros implements OperacionesInterfaces {
      * @param file que se quiere leer
      * @return Set del archivo
      */
-    private Set<Empleado> read(File file) {
+    public Set<Empleado> read(File file) {
         Set<Empleado> empleados = new HashSet<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
